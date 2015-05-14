@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.apache.spark</groupId>
+  <artifactId>spark-streaming-twitter_2.10</artifactId>
+  <versioning>
+    <release>1.3.1-DBC</release>
+    <versions>
+      <version>1.3.1-DBC</version>
+    </versions>
+    <lastUpdated>20150514214223</lastUpdated>
+  </versioning>
+</metadata>

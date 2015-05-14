@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu May 14 17:33:13 EDT 2015
+spark-network-shuffle_2.10-1.3.1-DBC.pom>=
+spark-network-shuffle_2.10-1.3.1-DBC-sources.jar>=
+spark-network-shuffle_2.10-1.3.1-DBC-javadoc.jar>=
+spark-network-shuffle_2.10-1.3.1-DBC.jar>=
