@@ -1,0 +1,522 @@
+<!doctype html>
+<html>
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+    <title>Guillaume Poirier</title>
+
+    <style>
+    /* Template level */
+body {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+}
+
+#resume {
+    max-width: 800px;
+    width: 100%;
+    padding: 24px 48px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 26px;
+    text-align: center;
+    margin: 5px;
+}
+
+h2 {
+    border-width: 1px;
+    border-style: none none solid none;
+    margin: 10px 0 2.5px 0;
+}
+
+section {
+    margin: 3px 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.item {
+    margin-top: 8px;
+}
+
+.item>.item-header {
+    display: block;
+}
+
+.item>.item-header>.item-header-title {
+    font-weight: bold;
+}
+
+.item-location {
+    font-weight: normal;
+}
+
+.item-header-subtitle-row,
+.item-header-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.item-header-subtitle-row>.item-header-subtitle {
+    font-style: italic;
+}
+
+.item-header .item-details {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.item-header .item-details>.item-details-title {
+    font-weight: bold;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Section specific */
+/* basics */
+.vertical-separator {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.vertical-separator:not(:first-child) {
+    border-left: 1px solid #000;
+    text-align: center;
+}
+
+/* Set some print settings. */
+@media print {
+    @page {
+        size: portrait;
+        margin: 10mm 25mm;
+    }
+
+    #resume {
+        max-width: 100%;
+        border: 0px;
+        background: #fff;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+
+    body,
+    html,
+    #resume {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .controls {
+        display: none;
+    }
+}
+    </style>
+
+    </head>
+    <body>
+
+    <div id="resume">
+        <section id="basics">
+            <h1>Guillaume Poirier</h1>
+            <div class="contact centered">
+        <span class="vertical-separator"><a href="mailto:gpoirier16@gmail.com">gpoirier16@gmail.com</a></span><span class="vertical-separator">917-650-3647</span><span class="vertical-separator">New York, US</span>    </div>
+            <div class="summary">
+                <h2>Summary</h2>
+                <p>Experienced Principal Software Engineer with over 20 years of experience in software engineering, 
+        including roughly a decade specializing in Scala. Passionate about functional programming and improving 
+        team productivity by automating development workflows, accelerating the delivery of high-performance, 
+        reliable software. Quick to adapt to new technologies, serving as a reference point for colleagues and 
+        mentoring junior engineers.
+        </p>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="item">
+                <li>
+                    <strong>Backend Development</strong>: Scala, Java, Functional Programming, Microservices
+                </li>
+                <li>
+                    <strong>Infrastructure &amp; DevOps</strong>: Kubernetes, Docker, Terraform, Helm, Google Cloud Platform, AWS, Azure
+                </li>
+                <li>
+                    <strong>Data Processing</strong>: Apache Kafka, Apache Spark, Streaming, Data Pipelines
+                </li>
+                <li>
+                    <strong>Build Tools &amp; Frameworks</strong>: sbt, Bazel, Gradle, Maven
+                </li>
+                <li>
+                    <strong>Databases</strong>: PostgreSQL, MySQL, Cassandra, YugabyteDB, Redis
+                </li>
+                <li>
+                    <strong>Scala Libraries</strong>: Cats, fs2, http4s, Slick, Circe, Shapeless, Finagle, Play Framework
+                </li>
+                <li>
+                    <strong>Java Libraries</strong>: Spring Framework, Guava, Apache Commons, Log4j
+                </li>
+                <li>
+                    <strong>Monitoring &amp; Observability</strong>: Prometheus / Grafana, Google Cloud Monitoring, Zipkin
+                </li>
+                <li>
+                    <strong>CI/CD</strong>: GitHub Actions, GitLab CI, Jenkins, Bamboo
+                </li>
+            </ul>
+        </section>
+        <section id="work">
+            <h2>Work Experience</h2>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-header-title">
+                    CipherTrace (acquired by Mastercard)<span class="item-location">, New York, NY</span>
+                </div>
+                <div class="item-header-subtitle-row">
+                    <div class="item-header-subtitle">
+                        Principal Software Engineer
+                    </div>
+                    <div class="item-details">
+                    
+                        <div class="date">
+                            Jan 2022 — Apr 2026
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+                    <ul class="highlights">
+                        <li>Part of the Data Platform team, primarily working on the Risk pipeline, 
+            a data pipeline consisting of different nodes reading from Kafka topics 
+            to transform the data and output the result to other Kafka topics.
+            </li>
+                        <li>Led the delivery of a new version of the pipeline using streaming to get 
+            real time updates to have risk values of new blockchain addresses to replace 
+            the batch pipeline that was providing updates every 10-20 hours.
+            </li>
+                        <li>Technologies: scala, kafka, yugabyte/cassandra, cats, fs2, google‐kubernetes‐engine, sbt, bazel</li>
+                    </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-header-title">
+                    Tapad<span class="item-location">, New York, NY</span>
+                </div>
+                <div class="item-header-subtitle-row">
+                    <div class="item-header-subtitle">
+                        Senior Software Engineer
+                    </div>
+                    <div class="item-details">
+                    
+                        <div class="date">
+                            Apr 2019 — Jan 2022
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+                    <ul class="highlights">
+                        <li>Part of the infrastructure team, responsible for shared libraries, framework and 
+            software infrastructure, such as an in-house tool to automate deployment across 
+            multiple production environments where the same code runs for different clients.
+            </li>
+                        <li>Led migration from Prometheus to Google Cloud Monitoring, improving observability 
+            across services and reducing alert noise, which accelerated incident response.
+            </li>
+                        <li>Technologies: scala, sbt, http4s, scala‐cats, kubernetes, google‐kubernetes‐engine, github‐actions, postgresql</li>
+                    </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-header-title">
+                    Kabbage<span class="item-location">, New York, NY</span>
+                </div>
+                <div class="item-header-subtitle-row">
+                    <div class="item-header-subtitle">
+                        Senior Software Engineer
+                    </div>
+                    <div class="item-details">
+                    
+                        <div class="date">
+                            May 2018 — Apr 2019
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+                    <ul class="highlights">
+                        <li>Joined Kabbage after their acquisition of Orchard.</li>
+                        <li>Migrated the Orchard platform to integrate with Kabbage's single sign-on solution using Okta.</li>
+                        <li>Worked on Kabbage's payment system, a micro-service architecture where the New York team developed 
+            Scala components using http4s and Slick, deployed on Kubernetes in AWS using Terraform.
+            </li>
+                        <li>Technologies: scala, sbt, finagle, http4s, scala‐cats, slick, postgresql, shapeless, circe, kubernetes, terraform</li>
+                    </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-header-title">
+                    Orchard Platform<span class="item-location">, New York, NY</span>
+                </div>
+                <div class="item-header-subtitle-row">
+                    <div class="item-header-subtitle">
+                        Senior Software Engineer
+                    </div>
+                    <div class="item-details">
+                    
+                        <div class="date">
+                            Aug 2016 — May 2018
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+                    <ul class="highlights">
+                        <li>Main engineer on the infrastructure team, responsible for providing and maintaining frameworks, 
+            libraries, and tools to other engineers.
+            </li>
+                        <li>Developed sbt plugins to improve the build and manage internal dependencies.</li>
+                        <li>Built a framework integrating Zipkin to surface microservice internals, significantly improving 
+            troubleshooting and latency analysis.
+            </li>
+                        <li>Migrated microservice deployments from Mesos to Kubernetes, simplifying operations and enabling 
+            container‑native orchestration.
+            </li>
+                        <li>Technologies: scala, sbt, finagle, finch, shapeless, circe, redis, thrift, mesos, marathon, kubernetes</li>
+                    </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-header-title">
+                    Meta<span class="item-location">, Toronto, ON, Canada</span>
+                </div>
+                <div class="item-header-subtitle-row">
+                    <div class="item-header-subtitle">
+                        Lead Scala Developer
+                    </div>
+                    <div class="item-details">
+                    
+                        <div class="date">
+                            Jul 2015 — Apr 2016
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+                    <ul class="highlights">
+                        <li>Part of the Application Services team, working on backend components.</li>
+                        <li>Transformed data from the data science team (papers, authors, concepts, journals) into efficient structures 
+            for consumption by the AngularJS application, which also manages user data like feeds and libraries.
+            </li>
+                        <li>As Lead Scala developer, directed the backend components and supported other developers in establishing a good 
+            development structure.
+            </li>
+                        <li>Technologies: scala, playframework, spray, akka‐stream, apache‐kafka, apache‐spark, mysql, orientdb</li>
+                    </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-header-title">
+                    Mediative<span class="item-location">, Toronto, ON, Canada</span>
+                </div>
+                <div class="item-header-subtitle-row">
+                    <div class="item-header-subtitle">
+                        Senior Scala Developer
+                    </div>
+                    <div class="item-details">
+                    
+                        <div class="date">
+                            Mar 2015 — Jul 2015
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+                    <ul class="highlights">
+                        <li>Technologies: scala, apache‐spark, spray, scala.js, scalaz</li>
+                    </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-header-title">
+                    Nurun<span class="item-location">, Toronto, ON, Canada</span>
+                </div>
+                <div class="item-header-subtitle-row">
+                    <div class="item-header-subtitle">
+                        Senior Software Developer
+                    </div>
+                    <div class="item-details">
+                    
+                        <div class="date">
+                            Jan 2014 — Feb 2015
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+                    <ul class="highlights">
+                        <li>Technologies: scala, playframework‐2.2, varnish, javascript, json</li>
+                    </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-header-subtitle-row">
+                    <div class="item-header-subtitle">
+                        Software Architect
+                    </div>
+                    <div class="item-details">
+                    
+                        <div class="date">
+                            Nov 2010 — Aug 2013
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+                    <ul class="highlights">
+                        <li>Technologies: java, jsp, sql, oracle, tomcat, apache, javascript, jquery, angularjs, varnish, freemarker, ehcache, html, svn, git</li>
+                    </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-header-title">
+                    Thales Group<span class="item-location">, Quebec, QC, Canada</span>
+                </div>
+                <div class="item-header-subtitle-row">
+                    <div class="item-header-subtitle">
+                        Software Developer
+                    </div>
+                    <div class="item-details">
+                    
+                        <div class="date">
+                            Mar 2007 — Nov 2010
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+                    <ul class="highlights">
+                        <li>Technologies: java, c#, worldwind, nhibernate, postgresql, postgis, nunit, testng, soap, wcf, java‐metro‐framework, sql‐server, mstest, bayesian, swing, hsqldb, h2, hibernate, prolog, winforms, jboss, google‐earth, kml, google‐maps, jetty, geoserver, prototypejs, jini, svn, mercurial</li>
+                    </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-header-title">
+                    Nurun<span class="item-location">, Quebec, QC, Canada</span>
+                </div>
+                <div class="item-header-subtitle-row">
+                    <div class="item-header-subtitle">
+                        Software Developer
+                    </div>
+                    <div class="item-details">
+                    
+                        <div class="date">
+                            Mar 2005 — Mar 2007
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+                    <ul class="highlights">
+                        <li>Technologies: java, oracle, oc4j, struts, html, javascript, css, cvs, svn</li>
+                    </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-header-title">
+                    Cardinal Health<span class="item-location">, Quebec, QC, Canada</span>
+                </div>
+                <div class="item-header-subtitle-row">
+                    <div class="item-header-subtitle">
+                        Software Developer
+                    </div>
+                    <div class="item-details">
+                    
+                        <div class="date">
+                            Oct 2003 — Aug 2004
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+                    <ul class="highlights">
+                        <li>Technologies: java, db2, resin, struts, html, web‐services, jvmti, visual‐sourcesafe</li>
+                    </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-header-title">
+                    Documex Inc.<span class="item-location">, Quebec, QC, Canada</span>
+                </div>
+                <div class="item-header-subtitle-row">
+                    <div class="item-header-subtitle">
+                        Software Developer
+                    </div>
+                    <div class="item-details">
+                    
+                        <div class="date">
+                            Jul 2002 — Sep 2003
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+                    <ul class="highlights">
+                        <li>Technologies: java, tomcat, iis, struts, hibernate, html, sql‐server, hsqldb, pocketpc, visual‐sourcesafe</li>
+                    </ul>
+        </div>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+        <div class="item">
+            <div class="item-header">
+                <div class="item-header-title">
+                    University of Quebec at Rimouski
+                </div>
+                <div class="item-header-subtitle-row">
+                    <div class="item-header-subtitle">
+                        Bachelor of Computer Science
+                    </div>
+                    <div class="item-details">
+                    
+                        <div class="date">
+                            Sep 1999 — Apr 2002
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        </section>
+    </body>
+</html>
